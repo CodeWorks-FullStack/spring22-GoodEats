@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS reviews(
   creatorId VARCHAR(255) COMMENT 'User Id',
   restaurantId INT COMMENT 'Restaurant Id',
   rating INT COMMENT 'Rating',
-  comment varchar(255) COMMENT 'Comment'
+  comment TEXT COMMENT 'Comment'
 ) default charset utf8 COMMENT '';
 
 
@@ -89,3 +89,55 @@ INSERT INTO restaurants
 (name, address, image)
 VALUES
 ('Aloha Zachs', '124 Hawaii blvd', 'https://images.unsplash.com/photo-1579887829494-5b736888265a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+
+/* SECTION REVIEWS */
+INSERT INTO reviews
+(creatorId, restaurantId, rating, comment)
+VALUES
+('GF123', 1, 5, 'Great food! Great service! The Pizza flavor exploded with greasy goodness!');
+
+INSERT INTO reviews
+(creatorId, restaurantId, rating, comment)
+VALUES
+('GF123', 6, 5, 'You may have had sandwiches, but nothing like Sandy Sams Sandwiches! these are the best sandwiches I have ever had! A completly mind altering experience! I just manifested the best turkey club!');
+
+INSERT INTO reviews
+(creatorId, restaurantId, rating, comment)
+VALUES
+('GF123', 7, 5, 'I am a big lover of ham, but this ham is killer! I can feel my arteries closing as we speak! If you want the tenderness of the ham, go in the back and take the owner on in a round of Ping-Pong!');
+
+INSERT INTO reviews
+(creatorId, restaurantId, rating, comment)
+VALUES
+('GF123', 10, 5, 'Wow! I am so impressed with the quality of the food! I closed my eyes and BOOM I was in an island paradise! I am so happy I found this place!');
+
+INSERT INTO reviews
+(creatorId, restaurantId, rating, comment)
+VALUES
+('BGR123', 1, 4, 'The band is what made this restaurant, Benedict and company were at their finest when playing. The pizza tasted like it was cooked in a dumpster, by a family of raccoons, in the heat of a Louisiana heat wave. Fortunately I recieved some tokens from the Rat himself, and I was able to get a free Kazoo.');
+
+INSERT INTO reviews
+(creatorId, restaurantId, rating, comment)
+VALUES
+('BGR123', 5, 3, 'My mother brought me here, and while the juice tasted like it was filtered through a sweaty middle schoolers gym sock after he ran the mile, it was healthy.');
+
+INSERT INTO reviews
+(creatorId, restaurantId, rating, comment)
+VALUES
+('BGR123', 9, 5, 'If there is one thing I know its sugar cookies. I may only have 3 teeth but I used every single one of them to dive into these delicious cookies. I am so happy I found this place!');
+
+INSERT INTO reviews
+(creatorId, restaurantId, rating, comment)
+VALUES
+('AE123', 1, 1, 'The staleness of this establishment is felt from the minute I steped through the hand smuged doors. I felt my soul leave my body feeling as though I resembled the host himself, a rat, most fitting. The taste of the food was so bitter it took me a week to recover.');
+
+INSERT INTO reviews
+(creatorId, restaurantId, rating, comment)
+VALUES
+('AE123', 3, 2, 'This is the second pizza establishment I have been too this month, dreadful, while there was less of a sensory assault due to no music the gingham plastic tablecloths only set to define further dissapointment by a lackluster pie.');
+
+INSERT INTO reviews
+(creatorId, restaurantId, rating, comment)
+VALUES
+('AE123', 8, 1, 'Fowl is the key word for this place. There were cats everywhere, and I was the only one who had the sense of mind to be disgusted. I was so sad I could not even manage a bite of the food.');
+
