@@ -11,7 +11,7 @@ namespace GoodEats.Models
     public string Name { get; set; }
     public string Address { get; set; }
     public string Image { get; set; }
-    public double AverageReview { get; set; }
+    public double AverageRating { get; set; }
     public int TotalReviews { get; set; }
   }
 }
