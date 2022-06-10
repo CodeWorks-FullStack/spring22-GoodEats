@@ -32,8 +32,9 @@ export default {
         try {
           AppState.activeRestaurant = props.restaurant
           await reviewsService.getReviews(props.restaurant.id)
-          Modal.getOrCreateInstance(document.getElementById('restaurant-modal')).show()
-        } catch (error) {
+          Modal.getOrCreateInstance(document.getElementById("restaurant-modal")).show()
+        }
+        catch (error) {
           Pop.toast("Restaurant not available")
         }
       }

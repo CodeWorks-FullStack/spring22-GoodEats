@@ -10,7 +10,6 @@
   </div>
 </template>
 
-
 <script>
 import { Modal } from 'bootstrap'
 import { useRouter } from 'vue-router'

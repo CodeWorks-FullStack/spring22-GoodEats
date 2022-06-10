@@ -1,7 +1,7 @@
 <template>
   <div class="home container">
     <div class="row justify-content-center">
-      <div class="col-12 col-md-8 my-3 " v-for="r in restaurants" :key="r.id">
+      <div class="col-12 col-md-8 my-3" v-for="r in restaurants" :key="r.id">
         <Restaurant :restaurant="r" />
       </div>
     </div>
